@@ -1,0 +1,40 @@
+html,
+#root,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: #73b0f6;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #358ef5;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+button {
+  font-weight: 500;
+  font-family: inherit;
+  transition: border-color 0.25s;
+  background-color: white;
+  color: #61a1d4;
+  border: 2px solid #9ec3e2;
+
+}
+
+button:hover {
+  background-color: #9ec3e2 !important;
+  color: white !important;
+  border: 2px solid #9ec3e2;
+  transition: border-color 0.25s;
+}

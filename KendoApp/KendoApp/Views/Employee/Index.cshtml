@@ -1,0 +1,125 @@
+﻿@model IEnumerable<Employee>
+
+@{
+    ViewData["Title"] = "Employees";
+}
+
+<div id="grid"></div>
+
+@section Scripts {
+    <script id="fullname-template" type="text/x-kendo-template">
+        <div class="d-flex">
+            <div class="avatar">#data.fullName#</div>
+            <div class="d-flex flex-column align-items-start">
+                <span class="full-name">#: data.fullName #</span>
+                <span class="full-name"></span>
+            </div>
+        </div>
+    </script>
+
+    <script id="alerts" type="text/x-kendo-template">
+        <div id="count-alert-city" class="alert alert-primary" role="alert">
+        </div>
+    </script>
+
+    <script>
+        function formatPhone(phone) {
+            var tempPhone = ('' + phone).replace(/\D/g, '');
+            var match = tempPhone.match(/^(\d{3})(\d{3})(\d{4})$/);
+
+            if (match) {
+                return '(' + match[1] + ') ' + match[2] + '-' + match[3];
+            }
+
+            return phone;
+        }
+
+        $(document).ready(function () {
+            $("#grid").kendoGrid({
+                toolbar: [
+                    { template: kendo.template($("#alerts").html()) }
+                ],
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "@Url.Action("GetEmployees", "Employee")",
+                            dataType: "json"
+                        }
+                    },
+                    pageSize: 20
+                },
+                height: 550,
+                groupable: true,
+                sortable: true,
+                pageable: {
+                    refresh: true,
+                    pageSizes: true,
+                    buttonCount: 5
+                },
+                dataBound: function (e) {
+                    var grid = e.sender;
+                    var items = e.sender.items();
+                    var data = grid.dataSource.data();
+                    var countMississauga = data.filter(x => x.city == "Mississauga").length;
+
+                    items.each(function (e) {
+                        var dataItem = grid.dataItem(this);
+                        var ddt = $(this).find('.avatar');
+
+                        const [name, lastName] = dataItem.fullName.split(' ');
+
+                        /* Create Avatar */
+                        $(ddt).kendoAvatar({
+                            type: "text",
+                            text: `${name[0]}${lastName[0]}`,
+                            themeColor: "tertiary"
+                        });
+
+                        /* Set Employee ID */
+                        $(this).find('.full-name').eq(1).text(dataItem.employeeId);
+
+                        /* Set Phone Number */
+                        dataItem.phoneNumber = formatPhone(dataItem.phoneNumber);   
+
+                        /* Set City Alert */
+                        $("#count-alert-city").text(`${countMississauga} Employees in Mississauga: `);
+                    })
+                },
+                columns: [
+                    {
+                        field: "fullName",
+                        title: "Full Name",
+                        template: kendo.template($("#fullname-template").html())
+                    },
+                    { 
+                        field: "sin", 
+                        title: "SIN",
+                        template: "#: sin.toString().replace(/(\\d{3})(\\d{3})(\\d{3})/, '$1-$2-$3') #"
+                    },
+                    { 
+                        field: "phoneNumber",
+                        title: "Phone Number",
+                        template: "#= formatPhone(phoneNumber) #"
+                    },
+                    { 
+                        field: "country",
+                        title: "Country",
+                        template: "#= country == 'Canada' ? '<span class=\"warning-country\">Canada</span>' : country #"
+                    },
+                    {
+                        field: "city",
+                        title: "City",
+                        template:" #= city == 'Mississauga' ? '<span class=\"badge badge-primary badge-padding\">Mississauga</span>' : city #"
+                    },
+                    { 
+                        field: "salary",
+                        title: "Salary",
+                        template: "$#= kendo.toString(salary, '0.00') #"
+                    },
+
+                ]
+            });
+        });
+    </script>
+
+}

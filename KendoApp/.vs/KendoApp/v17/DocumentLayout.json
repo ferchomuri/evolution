@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\pevolution\\KendoApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79C7C271-7A59-4B3B-85DC-AC531B92A241}|KendoApp\\KendoApp.csproj|c:\\pevolution\\kendoapp\\kendoapp\\wwwroot\\lib\\kendo-ui\\default-main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{79C7C271-7A59-4B3B-85DC-AC531B92A241}|KendoApp\\KendoApp.csproj|solutionrelative:kendoapp\\wwwroot\\lib\\kendo-ui\\default-main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79C7C271-7A59-4B3B-85DC-AC531B92A241}|KendoApp\\KendoApp.csproj|c:\\pevolution\\kendoapp\\kendoapp\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79C7C271-7A59-4B3B-85DC-AC531B92A241}|KendoApp\\KendoApp.csproj|solutionrelative:kendoapp\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79C7C271-7A59-4B3B-85DC-AC531B92A241}|KendoApp\\KendoApp.csproj|c:\\pevolution\\kendoapp\\kendoapp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79C7C271-7A59-4B3B-85DC-AC531B92A241}|KendoApp\\KendoApp.csproj|solutionrelative:kendoapp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79C7C271-7A59-4B3B-85DC-AC531B92A241}|KendoApp\\KendoApp.csproj|c:\\pevolution\\kendoapp\\kendoapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{79C7C271-7A59-4B3B-85DC-AC531B92A241}|KendoApp\\KendoApp.csproj|solutionrelative:kendoapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "default-main.css",
+              "DocumentMoniker": "C:\\pevolution\\KendoApp\\KendoApp\\wwwroot\\lib\\kendo-ui\\default-main.css",
+              "RelativeDocumentMoniker": "KendoApp\\wwwroot\\lib\\kendo-ui\\default-main.css",
+              "ToolTip": "C:\\pevolution\\KendoApp\\KendoApp\\wwwroot\\lib\\kendo-ui\\default-main.css",
+              "RelativeToolTip": "KendoApp\\wwwroot\\lib\\kendo-ui\\default-main.css",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAADEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-29T07:00:54.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\pevolution\\KendoApp\\KendoApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "KendoApp\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\pevolution\\KendoApp\\KendoApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "KendoApp\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAFIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-29T05:40:15.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\pevolution\\KendoApp\\KendoApp\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "KendoApp\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\pevolution\\KendoApp\\KendoApp\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "KendoApp\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T05:27:42.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\pevolution\\KendoApp\\KendoApp\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "KendoApp\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\pevolution\\KendoApp\\KendoApp\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "KendoApp\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAEoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T05:27:36.94Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
