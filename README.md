@@ -6,8 +6,8 @@ This application is built with React JS, Bootstrap 4.6, and Vite. It is designed
 
 To run the app:
 
--npm  i
--npm run dev
+-   **npm  i**
+-   **npm run dev**
 
 ## KendoApp
 
